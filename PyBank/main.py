@@ -25,7 +25,7 @@ if (os.path.isfile(fpath)) == False:
 #print("passed file verification") #used during testing
 
 #output file path
-fout = os.path.join("output", "summary_" + fname + '.csv')
+fout = os.path.join("output", "summary_" + fname + '.txt')
 
 #summary variables
 countmonth = 0 #record counter = number of months
@@ -65,20 +65,8 @@ with open(fpath, 'r') as f_in:
     #print(revchgmth[idx_of_n])
 
 #print analysis summary to terminal
-    print("\nFinancial Analysis")
-    print("-"*60)
-    print("Total Months: " + str(countmonth))
-    print("Total Revenue: $" + str(revenuesum))
-    print("Average Revenue Change: $" + str(a))
-    print("Greatest Increase in Revenue: " + str(revchgmth[idx_of_m]) + " $" + str(m))
-    print("Greatest Decrease in Revenue: " + str(revchgmth[idx_of_n]) + " $" + str(n))
+    print("\nFinancial Analysis\n" + "-"*60 + "\nTotal Months: " + str(countmonth) + "\nTotal Revenue: $" + str(revenuesum) + "\nAverage Revenue Change: $" + str(a) + "\nGreatest Increase in Revenue: " + str(revchgmth[idx_of_m]) + " $" + str(m) + "\nGreatest Decrease in Revenue: " + str(revchgmth[idx_of_n]) + " $" + str(n))
 
 #export results into a text file
 with open(fout, 'w') as f_out:
-    f_out.write("Financial Analysis\n")
-    f_out.write("-"*60)
-    f_out.write("\nTotal Months: " + str(countmonth))
-    f_out.write("\nTotal Revenue: $" + str(revenuesum))
-    f_out.write("\nAverage Revenue Change: $" + str(a))    
-    f_out.write("\nGreatest Increase in Revenue: " + str(revchgmth[idx_of_m]) + " $" + str(m))
-    f_out.write("\nGreatest Decrease in Revenue: " + str(revchgmth[idx_of_n]) + " $" + str(n))
+    f_out.write("Financial Analysis\n" + "-"*60 + "\nTotal Months: " + str(countmonth) + "\nTotal Revenue: $" + str(revenuesum) + "\nAverage Revenue Change: $" + str(a) + "\nGreatest Increase in Revenue: " + str(revchgmth[idx_of_m]) + " $" + str(m) + "\nGreatest Decrease in Revenue: " + str(revchgmth[idx_of_n]) + " $" + str(n))
