@@ -31,9 +31,9 @@ As final considerations:
 * You must include an exported markdown version of your Notebook called  `README.md` in your GitHub repository.
 
 ### Three observable trends based on the data
-- urban cities tend to have a lower average fare than suburban and rural types, but urban cities have more total rides of all the types
-- suburban drivers make up less than 13% of the total number of drivers, but suburban fares make up 30% of the total fares.
-- rural drivers only make up 1% the driver population and account for 5% of the total rides and 6% of the total fares.
+- Urban cities tend to have a lower average fare than suburban and rural types, but urban cities have more total rides of all the types.
+- Rural drivers only make up 1% of the driver population and account for 5% of the total rides and 6% of the total fares.  Rural types have the lowest volume of rides, and also the highest volatility (widest range) in average fare.
+- Suburban drivers make up less than 13% of the total number of drivers, but suburban rides make up 26% of the total rides and 30% of the total fares. Focusing efforts on expanding into more suburban type cities is a direction worth considering.
 
 
 ```python
