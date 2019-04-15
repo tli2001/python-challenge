@@ -5,13 +5,19 @@ This repository contains various python exercises completed during the data visu
 
 
 API Weather Analysis:
+
 ![alt text][img1]
+
 ![alt text][img2]
 
 Ride Sharing Platform Analysis:
+
 ![alt text][img3]
+
 ![alt text][img4]
+
 ![alt text][img5]
+
 ![alt text][img6]
 
 
